@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="200dp"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       app:showDividers="middle"
+       app:divider="@drawable/line_f4f4f4_v"
+       android:background="@color/white"
+       android:layout_alignParentBottom="true"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:gravity="center_vertical"
+           android:layout_marginLeft="20dp"
+           android:text="--"
+           android:textSize="14sp"
+           android:textColor="@color/color_2D2D2D"
+           android:id="@+id/tv_dialog_bottom_list_title"
+           android:layout_width="wrap_content"
+           android:layout_height="44dp"/>
+
+        <com.bs.demo.widget.view.BottomListView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="40dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            android:id="@+id/rlv_dialog_bottom_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+   </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

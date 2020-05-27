@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/common_navbar"/>
+    <androidx.core.widget.NestedScrollView
+        android:padding="10dp"
+        style="@style/common_scrollview">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat
+
+                app:divider="@drawable/line_f4f4f4_v"
+                app:showDividers="middle"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/shape_white_r8_bg"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_858585"
+                        android:textSize="14sp"
+                        android:text="账号"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:textColorHint="@color/color_DADADA"
+                        android:hint="请输入账号"
+                        android:singleLine="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/transparent"
+                        android:id="@+id/edt_reg_tel"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_2D2D2D"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_858585"
+                        android:textSize="14sp"
+                        android:text="密码"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:textColorHint="@color/color_DADADA"
+                        android:hint="请输入密码"
+                        android:background="@color/transparent"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/edt_reg_pwd"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_2D2D2D"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_marginTop="45dp"
+                android:id="@+id/tv_reg_submit"
+                android:background="@drawable/shape_0b94e4_r8_bg"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="注　册"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

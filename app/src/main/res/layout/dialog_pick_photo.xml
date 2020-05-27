@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            app:showDividers="middle"
+            app:divider="@drawable/line_f4f4f4_v"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/color_1869B0"
+                android:id="@+id/tv_take_photo"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="拍照上传"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+            <TextView
+                android:textColor="@color/color_2D2D2D"
+                android:id="@+id/tv_from_album"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="从相册选择"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+            <TextView
+                android:textColor="@color/color_858585"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="14sp"
+                android:id="@+id/mbtn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

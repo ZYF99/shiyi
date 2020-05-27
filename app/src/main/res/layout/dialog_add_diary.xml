@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    android:padding="16dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:inputType="text"
+            android:hint="标题"/>
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:gravity="start"
+            android:background="@null"
+            android:inputType="text|textMultiLine"
+            android:hint="内容" />
+</LinearLayout>

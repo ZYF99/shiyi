@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bs.demo.widget.view.NavigationBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navbar"
+    android:elevation="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></com.bs.demo.widget.view.NavigationBar>
